@@ -6,10 +6,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load files
-model = pickle.load(open("/content/drive/MyDrive/agri_project/final_model.pkl", "rb"))
-scaler = pickle.load(open("/content/drive/MyDrive/agri_project/scaler.pkl", "rb"))
-encoders = pickle.load(open("/content/drive/MyDrive/agri_project/encoders.pkl", "rb"))
-features = pickle.load(open("/content/drive/MyDrive/agri_project/feature_columns.pkl", "rb"))
+model = pickle.load(open("final_model.pkl", "rb"))
+scaler = pickle.load(open("scaler.pkl", "rb"))
+encoders = pickle.load(open("encoders.pkl", "rb"))
+features = pickle.load(open("feature_columns.pkl", "rb"))
 
 # Initialize history
 if "history" not in st.session_state:
